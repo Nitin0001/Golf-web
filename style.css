@@ -39,6 +39,7 @@ video {
   width: 100%;
   object-fit: cover;
   position: fixed;
+  z-index: -1;
 }
 #main {
   position: relative;
@@ -64,13 +65,17 @@ h2 {
 #page1 h1::before {
   content: "EAT. DRINK. PLAY.";
   position: absolute;
-  color: #0000;
-  top: -4px;
+  color: black;
+  top: -6px;
+  left: -6px;
+  -webkit-text-stroke: 2px #95c11e;
+  z-index: -1;
 }
 
 #page1 h1 {
   font-size: 140px;
   font-weight: 900;
+  position: relative;
 }
 
 #page1 h2 {
