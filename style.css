@@ -12,6 +12,25 @@ body {
   width: 100%;
 }
 
+#cursor {
+  height: 15px;
+  width: 15px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+
+#cursor-blurr {
+  height: 300px;
+  width: 300px;
+  background-color: #96c11e5d;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(50px);
+  z-index: 9;
+}
+
 #nav {
   height: 145px;
   width: 100%;
@@ -54,6 +73,7 @@ video {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  z-index: 10;
   /* background-color: red; */
 }
 
@@ -94,4 +114,5 @@ h2 {
 #page2 {
   height: 100vh;
   width: 100%;
+  z-index: 10;
 }
